@@ -1,3 +1,4 @@
+ (cd "$(git rev-parse --show-toplevel)" && git apply --3way <<'EOF' 
 diff --git a//dev/null b/README.md
 index 0000000000000000000000000000000000000000..aad47f6d2f74ddbd2e48cc8e554f9bfa75f698f1 100644
 --- a//dev/null
@@ -40,3 +41,6 @@ index 0000000000000000000000000000000000000000..aad47f6d2f74ddbd2e48cc8e554f9bfa
 +2. Abra os notebooks em `scripts/` em seu ambiente Jupyter de preferência para reproduzir a análise e o treinamento do modelo.
 +
 +Fique à vontade para explorar os dados e adaptar o código conforme necessário.
+ 
+EOF
+)
